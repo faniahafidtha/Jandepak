@@ -8,7 +8,6 @@ import 'package:jandepak/Profile.dart';
 import 'package:jandepak/MakananPage.dart';
 import 'package:jandepak/MinumanPage.dart';
 import 'package:jandepak/TambahProduk.dart';
-import 'package:jandepak/pesanan.dart';
 
 class homescreen extends StatefulWidget {
   const homescreen({super.key});
@@ -76,20 +75,6 @@ class _homescreenState extends State<homescreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ProfilePage()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.list,
-                color: Colors.black,
-              ), // Icon for "Pesanan"
-              title: Text('Pesanan'),
-              onTap: () {
-                Navigator.pop(context); // Close the drawer
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Pesanan()),
                 );
               },
             ),
